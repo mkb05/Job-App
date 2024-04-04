@@ -1,5 +1,7 @@
 package com.spring.firstjobapp.job;
 
-public interface JobRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface JobRepository extends JpaRepository<Job,Long> {
 
 }
